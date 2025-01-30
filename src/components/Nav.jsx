@@ -21,8 +21,9 @@ export default function Nav ({ className }) {
     const location = useLocation()
     const { pathname } = location
     const isHome = pathname === '/'
-    const isDemo = pathname === '/demo'
+    const isDemo = pathname === '/search'
     const isAccount = pathname === '/account'
+    const isReviews = pathname === '/provider-reviews'
     const isLogin = pathname === '/login'
     const isRegistration = pathname === '/registration'
 
@@ -136,7 +137,7 @@ export default function Nav ({ className }) {
     }, [scrollData])
 
     return (
-        <nav className={`${isDemo || isAccount ? 'sticky' : 'fixed'} top-0 ${showNav ? '-translate-y-full' : ''} ${navColor ? 'bg-slate-100 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 backdrop-saturate-50 backdrop-contrast-125' : ''} mx-auto w-full transition-all duration-700 ease-out z-50 h-[5.125rem] ${className}`}>
+        <nav className={`${isDemo || isAccount || isReviews ? 'sticky' : 'fixed'} top-0 ${showNav ? '-translate-y-full' : ''} ${navColor ? 'bg-slate-100 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 backdrop-saturate-50 backdrop-contrast-125' : ''} mx-auto w-full transition-all duration-700 ease-out z-50 h-[5.125rem] ${className}`}>
             <div className='mx-auto flex justify-between items-center w-11/12 max-w-7xl py-4 px-6 md:px-2 lg:px-10 xl:px-14 2xl:px-30'>
                 <Link className='flex justify-between items-center gap-3' to='/'>
                     <img src={assets.logo} alt="Website Logo" width={50} />
@@ -207,7 +208,20 @@ export default function Nav ({ className }) {
                     </ul>
                 )}
                 
-                <img onClick={() => checkMobileMenu()} src={assets.menu_icon} className='md:hidden w-7 ' alt="" />
+                <svg
+                    onClick={() => checkMobileMenu()}
+                    className={`md:hidden w-7 text-primary ${isHome ? '' : 'dark:text-primary-foreground'}`}
+                    width="36"
+                    height="29"
+                    viewBox="0 0 36 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <rect width="35.9988" height="4" rx="2" fill="currentColor" />
+                    <rect x="13.0898" y="12.5" width="22.9083" height="4" rx="2" fill="currentColor" />
+                    <rect x="4.91016" y="25" width="31.0899" height="4" rx="2" fill="currentColor" />
+                </svg>
+
             </div>
             {/* ----------mobile----------- */}
             <div className={`md:hidden ${showMobileMenu ? 'fixed w-fit' : 'translate-x-10 h-0 w-0'} right-0 overflow-hidden rounded-bl-xl bg-white bg-clip-padding bg-opacity-95 transition-all`}>

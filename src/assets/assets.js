@@ -7,10 +7,11 @@ import right_arrow from './right_arrow.svg'
 import check from './check.svg'
 import loadingBuilding from './loadingBuilding.gif'
 import funda from './funda.png'
-import paparius from './paparius.png'
+import pararius from './pararius.png'
 import rentola from './rentola.png'
 import hAnywhere from './hAnywhere.png'
 import kamernet from './kamernet.png'
+import kamerNL from './kamerNL.png'
 import huurwoningen from './huurwoningen.png'
 import placeholder from './placeholder.png'
 import moreplace from './morePlaceHolder.jpg'
@@ -29,6 +30,7 @@ import github from './github.svg'
 import linkedin from './linkedin.svg'
 import signupvideo from './signup.webm'
 import searchvideo from './search.webm'
+import emailvideo from './email.webm'
 
 export const assets = {
     logo,
@@ -40,10 +42,11 @@ export const assets = {
     check,
     loadingBuilding,
     funda,
-    paparius,
+    pararius,
     rentola,
     hAnywhere,
     kamernet,
+    kamerNL,
     huurwoningen,
     placeholder,
     moreplace,
@@ -62,4 +65,5 @@ export const assets = {
     linkedin,
     signupvideo,
     searchvideo,
+    emailvideo,
 }
