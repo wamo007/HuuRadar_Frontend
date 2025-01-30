@@ -8,7 +8,7 @@ export const UserContextProvider = (props) => {
 
     axios.defaults.withCredentials = true
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL
+    const backendUrl = 'https://api.huuradar.org'
     const [loggedIn, setLoggedIn] = useState(false)
     const [userData, setUserData] = useState(false)
 

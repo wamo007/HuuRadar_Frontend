@@ -80,7 +80,7 @@ function SearchPanel({ responseDataChange, loadingStatus, providerSet }) {
     providerSet(selectedProviders)
 
     try {
-      const response = await fetch('https://api.huuradar.org/api/', {
+      const response = await fetch(backendUrl + '/api/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ city, radius, selectedProviders, sortGlobal, minPrice, maxPrice }),
