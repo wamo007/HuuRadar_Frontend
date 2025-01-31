@@ -9,16 +9,12 @@ import ResetPassword from './pages/ResetPassword'
 import EmailVerify from './pages/EmailVerify'
 import Account from './pages/Account'
 import ProviderReviews from './pages/ProviderReviews'
-import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
 
   return (
     <>
-      <ToastContainer pauseOnFocusLoss={false} position='bottom-right' autoClose={3000} 
-        style={{
-          '--toastify-color-success': '#111827',
-        }} />
+      <ToastContainer pauseOnFocusLoss={false} position='bottom-right' autoClose={3000} />
       <ScrollToHashElement behavior="smooth" />
       <Routes>
         <Route path='/' element={<Home />} />
