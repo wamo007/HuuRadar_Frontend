@@ -9,6 +9,7 @@ import ResetPassword from './pages/ResetPassword'
 import EmailVerify from './pages/EmailVerify'
 import Account from './pages/Account'
 import ProviderReviews from './pages/ProviderReviews'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
 
