@@ -247,10 +247,11 @@ export default function Account() {
 
                         return (
                           <SelectItem 
-                          key={query._id} 
-                          value={query}>
-                          {city}: {providers}
-                        </SelectItem>
+                            key={query._id} 
+                            value={query}>
+                            {city}: {providers}
+                            <img src={assets.trash} onClick={() => deleteQuery(query._id)} alt="Delete item" />
+                          </SelectItem>
                         )
                       })
                     ) : (
