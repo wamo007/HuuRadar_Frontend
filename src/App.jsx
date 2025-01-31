@@ -14,7 +14,10 @@ function App() {
 
   return (
     <>
-      <ToastContainer pauseOnFocusLoss={false} position='bottom-right' autoClose={3000} />
+      <ToastContainer pauseOnFocusLoss={false} position='bottom-right' autoClose={3000} 
+        style={{
+          '--toastify-color-success': '#111827',
+        }} />
       <ScrollToHashElement behavior="smooth" />
       <Routes>
         <Route path='/' element={<Home />} />

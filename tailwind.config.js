@@ -12,9 +12,6 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		backgroundImage: {
-			'fade-out-effect': 'radial-gradient(circle, rgba(75,85,99,1) 0%, rgba(75,85,99,0) 70%)',
-		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
