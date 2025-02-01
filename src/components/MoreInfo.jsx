@@ -20,8 +20,10 @@ export default function MoreInfo() {
               <div className={`sm:p-1 md:p-2 lg:p-3 md:w-2/3 lg:w-1/2 transition-all ease-in-out duration-1000 max-md:w-full max-md:text-center ${isVisibleMore2 ? 'opacity-100' : 'opacity-0 translate-x-40'} text-lg sm:text-xl lg:text-2xl text-white *:py-1 dark:px-7 py-5 backdrop-blur-md rounded-xl border bg-slate-900/80 border-white/30`}>
                 <p>
                   The app checks for the new rentals on 6 popular providers every <span className='font-semibold'>15</span> minutes. 
-                As soon as something that is related to your search pops up, you receive an email notification. 
-                It is recommended to make your search terms as precise as possible to get only the alerts that are on your budget or radius preferences.
+                  As soon as something that is related to your search pops up, you receive an email notification. 
+                </p>
+                <p>
+                  It is recommended to make your search terms as precise as possible to get only the alerts that are on your budget or radius preferences.
                 </p>
                 <p>HuuRadar does not have any hidden costs. You get alerted by email about the new posts, and you can <span className='font-semibold'>directly</span> navigate to the provider's listing without any hassle.</p>
                 <p>You can click&nbsp;
