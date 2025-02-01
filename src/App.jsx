@@ -4,6 +4,7 @@ import Demo from './pages/Demo'
 import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element"
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import './index.css'
 import { Routes, Route } from 'react-router-dom'
 import ResetPassword from './pages/ResetPassword'
 import EmailVerify from './pages/EmailVerify'
