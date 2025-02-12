@@ -33,7 +33,7 @@ const ProviderData = memo(({ provider, responseData, noResults }) => {
         <>
           <div className='*:grid *:grid-cols-[repeat(auto-fill,_204px)] max-[408px]:*:grid-cols-[repeat(auto-fill,_180px)] *:justify-center *:justify-items-center *:items-center lg:*:gap-20 md:*:gap-16'>
             <div className="transition-all *:transition-all *:ease-in">
-              <div className="place-items-center dark:place-content-center dark:bg-gray-500 dark:text-muted dark:border dark:border-white/30 md:rounded-lg sm:shadow-xl hover:shadow-2xl shadow-slate-900 hover:scale-105 hover:z-10 max-md:dark:border max-[408px]:w-[11.25rem]">
+              <div className="place-items-center dark:place-content-center dark:h-[19rem] dark:bg-gray-500 dark:text-muted dark:border dark:border-white/30 md:rounded-lg sm:shadow-xl hover:shadow-2xl shadow-slate-900 hover:scale-105 hover:z-10 max-md:dark:border max-md:dark:border-slate-900 max-[408px]:w-[11.25rem]">
                 <img src={logo} alt={`${label} logo`} width={120} />
                 <h3 className='pt-4 text-center'>Results on {label}</h3>
               </div>
