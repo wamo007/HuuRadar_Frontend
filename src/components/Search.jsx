@@ -41,11 +41,7 @@ const providers = [
   {
     id: "huurwoningen",
     label: "Huurwoningen",
-  },
-  {
-    id: "rentola",
-    label: "Rentola",
-  },
+  }
 ];
 
 function SearchPanel({ responseDataChange, loadingStatus, providerSet }) {
